@@ -2,8 +2,8 @@
 Town of Cary NC auto bill pay script with Selenium and Python.
 
 Requirements:
-- Selenium
-- Firefox
+- [Selenium](https://pypi.python.org/pypi/selenium)
+- [Firefox](https://www.mozilla.org/)
 - Filling in your own info into the script
 
 This Python script lets you quickly pay your utility bill if you live in Cary, NC.
