@@ -20,8 +20,8 @@ Select(driver.find_element_by_name("paymentMethodCategory")).select_by_index(1) 
 Select(driver.find_element_by_name("paymentMethod.type")).select_by_index(1) # select credit card type
 driver.find_element_by_name("paymentMethod.accountNumber").send_keys("PUT YOUR CC HERE") # warning! raw credit card number
 driver.find_element_by_name("paymentMethod.cvv").send_keys("PUT YOUR CVV HERE") # warning! raw cvv
-Select(driver.find_element_by_name("paymentMethod.creditCardExpiryDate.month")).select_by_index(4) # select expiration month
-Select(driver.find_element_by_name("paymentMethod.creditCardExpiryDate.year")).select_by_index(3) # select expiration year
+Select(driver.find_element_by_name("paymentMethod.creditCardExpiryDate.month")).select_by_index(0) # PUT EXPIRATION MONTH HERE
+Select(driver.find_element_by_name("paymentMethod.creditCardExpiryDate.year")).select_by_index(0) # PUT EXPIRATION YEAR HERE
 
 paymentAmount = driver.find_element_by_name("header.paymentAmount")
 paymentAmount.clear()
