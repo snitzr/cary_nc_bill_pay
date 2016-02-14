@@ -36,3 +36,4 @@ driver.find_element_by_name("header.acceptTermsAndConditions").click()
 
 print("End. \nPaid: ")
 print(bill_amount)
+
