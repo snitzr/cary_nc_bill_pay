@@ -3,7 +3,7 @@ from selenium.webdriver.support.ui import Select
 
 driver = webdriver.Firefox()
 driver.implicitly_wait(2)  # seconds
-driver.get('https://ipn.paymentus.com/epd/stde/tcnc')
+driver.get("https://ipn.paymentus.com/epd/stde/tcnc")
 
 
 # landing page
@@ -20,8 +20,8 @@ Select(driver.find_element_by_name("paymentMethodCategory")).select_by_index(1) 
 Select(driver.find_element_by_name("paymentMethod.type")).select_by_index(1)  # select credit card type
 driver.find_element_by_name("paymentMethod.accountNumber").send_keys("PUT YOUR CC HERE")  # warning! raw credit card number
 driver.find_element_by_name("paymentMethod.cvv").send_keys("PUT YOUR CVV HERE")  # warning! raw cvv
-Select(driver.find_element_by_name("paymentMethod.creditCardExpiryDate.month")).select_by_index(0)  # PUT EXPIRATION MONTH HERE USING INDEX NUMBER
-Select(driver.find_element_by_name("paymentMethod.creditCardExpiryDate.year")).select_by_index(0)  # PUT EXPIRATION YEAR HERE USING INDEX NUMBER
+Select(driver.find_element_by_name("paymentMethod.creditCardExpiryDate.month")).select_by_index(0)  # select expiration month
+Select(driver.find_element_by_name("paymentMethod.creditCardExpiryDate.year")).select_by_index(0)  # select expiration year
 
 paymentAmount = driver.find_element_by_name("header.paymentAmount")
 paymentAmount.clear()
@@ -36,4 +36,3 @@ driver.find_element_by_name("header.acceptTermsAndConditions").click()
 
 print("End. \nPaid: ")
 print(bill_amount)
-
