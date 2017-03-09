@@ -2,6 +2,8 @@
 
 Note: As of 2016, Cary now has auto bill.
 
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
 ~~Town of Cary, NC, USA auto bill pay script with Selenium and Python.~~
 
 ~~Requirements:~~
